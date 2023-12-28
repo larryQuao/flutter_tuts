@@ -6,7 +6,9 @@
 // import 'screens/home4_1.dart';
 // import 'screens/home4_2.dart';
 // import 'screens/home5.dart';
-import 'screens/home6.dart';
+// import 'screens/home6.dart';
+// import 'screens/home7.dart';
+import 'screens/home8.dart';
 
 import 'package:flutter/material.dart';
 

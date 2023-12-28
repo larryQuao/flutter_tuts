@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  Home({Key? key}) : super(key: key);
+  Home({super.key});
 
   List<String> products = ["Bed", "Sofas", "Chairs"];
   List<String> productDetails = [
@@ -16,7 +16,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigation Drawer'),
+        title: const Text('Navigation Drawer'),
         backgroundColor: Colors.blue.shade300,
         foregroundColor: Colors.white,
       ),
@@ -41,25 +41,33 @@ class Home extends StatelessWidget {
               ],
             ),
             ListTile(
-                leading: Icon(Icons.home), title: Text('Home'), onTap: () {}),
-            ListTile(
-                leading: Icon(Icons.shopping_cart),
-                title: Text('Shop'),
+                leading: const Icon(Icons.home),
+                title: const Text('Home'),
                 onTap: () {}),
             ListTile(
-                leading: Icon(Icons.favorite),
-                title: Text('Favorites'),
+                leading: const Icon(Icons.shopping_cart),
+                title: const Text('Shop'),
                 onTap: () {}),
-            Padding(
-              padding: const EdgeInsets.all(14.0),
+            ListTile(
+                leading: const Icon(Icons.favorite),
+                title: const Text('Favorites'),
+                onTap: () {}),
+            const Padding(
+              padding: EdgeInsets.all(14.0),
               child: Text('Labels'),
             ),
             ListTile(
-                leading: Icon(Icons.label), title: Text('Red'), onTap: () {}),
+                leading: const Icon(Icons.label),
+                title: const Text('Red'),
+                onTap: () {}),
             ListTile(
-                leading: Icon(Icons.label), title: Text('Green'), onTap: () {}),
+                leading: const Icon(Icons.label),
+                title: const Text('Green'),
+                onTap: () {}),
             ListTile(
-                leading: Icon(Icons.label), title: Text('Blue'), onTap: () {}),
+                leading: const Icon(Icons.label),
+                title: const Text('Blue'),
+                onTap: () {}),
           ],
         ),
       ),
@@ -76,7 +84,7 @@ class Home extends StatelessWidget {
             subtitle: Text(productDetails[index]),
             trailing: Text(
               prices[index].toString(),
-              style: TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16),
             ),
           );
         },
