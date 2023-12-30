@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  Home({Key? key}) : super(key: key);
+  Home({super.key});
 
   List<String> products = ["Bed", "Sofas", "Chairs"];
   List<String> productDetails = [
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
             subtitle: Text(productDetails[index]),
             trailing: Text(
               prices[index].toString(),
-              style: TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16),
             ),
           );
         },
